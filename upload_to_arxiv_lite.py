@@ -171,5 +171,5 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
     # delete_all_tags_from_library()  # purge library
+    main()
