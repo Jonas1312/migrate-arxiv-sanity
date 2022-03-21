@@ -5,7 +5,15 @@ Migrate [arxiv-sanity.com](https://arxiv-sanity.com) library to new [arxiv-sanit
 
 ## Run Locally
 
-1) Download `my_library.json` from old [arxiv-sanity.com](https://arxiv-sanity.com)
+1) Get your session cookie from [https://arxiv-sanity.com](https://arxiv-sanity.com) (when the website is running... (╯‵□′)╯︵┻━┻ )
+2) Add your session cookie to `backup_old_arxiv_sanity.py`:
+
+    ```python
+    cookies = {
+      "session": "HERE",
+    }
+    ```
+3) Download `my_library.json` from old [arxiv-sanity.com](https://arxiv-sanity.com) using `backup_old_arxiv_sanity.py`
 
     ```json
     [
@@ -39,8 +47,8 @@ Migrate [arxiv-sanity.com](https://arxiv-sanity.com) library to new [arxiv-sanit
     ]
     ```
 
-2) Get your session cookie from [arxiv-sanity-lite.com](https://arxiv-sanity-lite.com)
-3) Add your session cookie to `upload_to_arxiv_lite.py`:
+4) Get your session cookie from [arxiv-sanity-lite.com](https://arxiv-sanity-lite.com)
+5) Add your session cookie to `upload_to_arxiv_lite.py`:
 
     ```python
     cookies = {
@@ -48,7 +56,7 @@ Migrate [arxiv-sanity.com](https://arxiv-sanity.com) library to new [arxiv-sanit
     }
     ```
 
-4) Run `upload_to_arxiv_lite.py`
+6) Run `upload_to_arxiv_lite.py`
 
 ## Acknowledgements
 
